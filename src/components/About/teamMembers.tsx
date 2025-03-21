@@ -6,10 +6,7 @@ import "yet-another-react-lightbox/styles.css";
 import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 
 // Import Swiper styles
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import "swiper/swiper-bundle.css";
 
 import teamMemeber1 from "../../assets/placeholder.png";
 import teamMemeber2 from "../../assets/placeholder.png";
@@ -121,12 +118,7 @@ function TeamMemebers() {
               slides={images.map((src) => ({ src }))}
               index={photoIndex}
               on={{
-                clickPrev: () =>
-                  setPhotoIndex(
-                    (photoIndex - 1 + images.length) % images.length
-                  ),
-                clickNext: () =>
-                  setPhotoIndex((photoIndex + 1) % images.length),
+                view: ({ index }) => setPhotoIndex(index),
               }}
             />
           </div>
