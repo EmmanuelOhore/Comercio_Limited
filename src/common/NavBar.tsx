@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../assets/logo-Placeholder.jpg";
 const NavBar = () => {
+  const navigate = useNavigate();
   return (
     <nav className=" outline flex items-center justify-between py-6 px-[5rem] bg-black ">
       <div className=" w-[5rem] h-[2.5rem] text-center rounded-sm overflow-hidden">
@@ -39,7 +40,10 @@ const NavBar = () => {
           <i className="fa-solid fa-earth-americas mr-1.5"></i>
           Location
         </button>
-        <button className="text-lg font-light rounded-md bg-[#0B2585] text-white   py-2 px-4">
+        <button
+          onClick={() => navigate("/contactus")}
+          className="text-lg font-light rounded-md bg-[#0B2585] text-white   py-2 px-4"
+        >
           Contact us
         </button>
       </div>
