@@ -1,0 +1,7 @@
+@import "tailwindcss";
+.backgroundimgs {
+  background: url("./assets/placeholder.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
