@@ -1,71 +1,9 @@
 import BlogList from "./bloglist";
-import placeholder from "../../assets/placeholder.png";
 import BlofAside from "./blogaside";
 import { useState } from "react";
+import { blogspostlong } from "../../constants/contants";
 
 function MainBlogSection() {
-  const blogspostlong = [
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Strategies Marketing  for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Digital Marketing Strategies for  Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Ecosystem Marketing Strategies for Digital ",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Local Marketing Strategies for  Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-    {
-      img: placeholder,
-      title: "Marketing Strategies for Digital Ecosystem",
-      description:
-        "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia...",
-    },
-  ];
   const [searchQuery, setsearchQuery] = useState(""); // Search query
   const [filteredBlog, setfilteredBlog] = useState(blogspostlong); // Filtered blog posts
   const [currentindex, setsurrentindex] = useState(0); // Pagination index
