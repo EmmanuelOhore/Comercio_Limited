@@ -25,15 +25,11 @@ const NavBar = () => {
           </li>
         </Link>
 
-        <li className="text-lg text-white  hover:text-[#707070] transition-all duration-300 ">
-          Insights
-        </li>
-        <li className="text-lg text-white  hover:text-[#707070] transition-all duration-300 ">
-          Solution
-        </li>
-        <li className="text-lg text-white  hover:text-[#707070] transition-all duration-300 ">
-          Solution
-        </li>
+        <Link to="/insights">
+          <li className="text-lg text-white  hover:text-[#707070] transition-all duration-300 ">
+            Insights
+          </li>
+        </Link>
       </ul>
       <div className="flex gap-2">
         <button className="text-white  bg-black py-2 px-4 text-base font-light">
@@ -42,7 +38,7 @@ const NavBar = () => {
         </button>
         <button
           onClick={() => navigate("/contactus")}
-          className="text-lg font-light rounded-md bg-[#0B2585] text-white   py-2 px-4"
+          className="text-lg font-bold rounded-md bg-[#0B2585] text-white   py-2 px-4"
         >
           Contact us
         </button>
