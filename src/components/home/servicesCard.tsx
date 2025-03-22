@@ -14,11 +14,11 @@ const ServicesCard = () => {
           Information Systems Protection
         </h2>
         <ul className="flex flex-col gap-1.5 ">
-          <li className="text-base font-light flex text-black/64 gap-1.5  max-laptop:text-sm max-phoneL:text-xs  max-phoneP:font-normal ">
-            <i className="fa-solid fa-square text-[10px] text-black/30  mt-2 max-laptop:text-[8px] max-phoneP:text-[7px]"></i>
+          <li className="text-base font-light flex text-black/64 gap-1.5 max-laptop:font-normal  max-laptop:text-sm max-phoneL:text-xs  max-phoneP:font-normal ">
+            <i className="fa-solid fa-square text-[10px] text-black/30  mt-2  max-laptop:text-[8px] max-phoneP:text-[7px] "></i>
             Ensure DNS resolution at the edge for uninterrupted operations
           </li>
-          <li className="text-base font-light flex text-black/64 gap-1.5  max-laptop:text-sm max-phoneL:text-xs max-phoneP:font-normal">
+          <li className="text-base font-light flex text-black/64 gap-1.5 max-laptop:font-normal  max-laptop:text-sm max-phoneL:text-xs max-phoneP:font-normal">
             <i className="fa-solid fa-square text-[10px] text-black/30  mt-2 max-laptop:text-[8px] max-phoneP:text-[7px]"></i>
             Ensure DNS resolution at the edge for uninterrupted operations
           </li>

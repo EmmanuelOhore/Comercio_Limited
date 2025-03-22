@@ -2,7 +2,7 @@
 const HeroSection = () => {
   return (
     <section className="h-[85vh] bg-black/20  flex items-center !bg-no-repeat !bg-cover !bg-center ">
-      <div className="ml-[15rem] flex gap-4 flex-col max-laptop:ml-[10rem] max-laptop:gap-2 max-tablet:ml-[5rem] max-phoneL:ml-[3rem] max-phoneL:gap-1 max-phoneP:ml-[1.5rem] max-phoneP:gap-2">
+      <div className="ml-[15rem] flex gap-4 flex-col max-laptop:ml-[10rem] max-laptop:gap-2 max-tablet:ml-[5rem] max-phoneL:ml-[2rem] max-phoneL:gap-1 max-phoneP:ml-[1.5rem] max-phoneP:gap-2">
         <h2 className="text-xl font-medium max-laptop:font-nromal max-laptop:text-lg max-tablet:text-base  max-phoneL:text-sm max-phoneP:text-xs">
           What we do{" "}
         </h2>
