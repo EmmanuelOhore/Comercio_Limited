@@ -50,7 +50,7 @@ function BlofAside({
     },
   ];
   return (
-    <section className=" w-[30%] p-4 flex flex-col gap-[4rem] tablet:p-2 tablet:gap-8 phoneL:w-full ">
+    <section className=" w-[30%] p-4 flex flex-col gap-[4rem] max-tablet:p-2 max-tablet:gap-8 max-phoneL:w-full ">
       {searcdisplay && (
         <Search searchQuery={searchQuery} handlesearch={handlesearch} />
       )}
@@ -58,7 +58,7 @@ function BlofAside({
       <div className="recebt_blog flex flex-col gap-4">
         <h1
           data-aos="fade-down"
-          className="uppercase font-bold leading-[30px] text-[20px] laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]"
+          className="uppercase font-bold leading-[30px] text-[20px] max-laptop:text-[17px] max-laptop:leading-[25px] max-tablet:text-[15px]"
         >
           recent blog
         </h1>
@@ -70,45 +70,45 @@ function BlofAside({
           })}
         </div>
       </div>
-      <div className="categories_tag flex w-[60%] gap-4 flex-col laptop:w-[90%] laptop:gap-3 phoneP:w-[100%]">
+      <div className="categories_tag flex w-[60%] gap-4 flex-col max-laptop:w-[90%] max-laptop:gap-3 max-phoneP:w-[100%]">
         <h1
           data-aos="fade-down"
-          className="font-bold  leading-[30px] text-[20px] uppercase laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]"
+          className="font-bold  leading-[30px] text-[20px] uppercase max-laptop:text-[17px] max-laptop:leading-[25px] max-tablet:text-[15px]"
         >
           tag cloud
         </h1>
         <div className="flex gap-[.3rem]  flex-wrap">
           <h2
             data-aos="fade-left "
-            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold"
+            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md max-laptop:text-[10px]  max-laptop:font-semibold"
           >
             design
           </h2>
           <h2
             data-aos="fade-left "
             data-aos-delay="200"
-            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold"
+            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md max-laptop:text-[10px]  max-laptop:font-semibold"
           >
             learn
           </h2>
           <h2
             data-aos="fade-left "
             data-aos-delay="400"
-            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold"
+            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md max-laptop:text-[10px]  max-laptop:font-semibold"
           >
             bag
           </h2>
           <h2
             data-aos="fade-left "
             data-aos-delay="600"
-            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold"
+            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md max-laptop:text-[10px]  max-laptop:font-semibold"
           >
             pen
           </h2>
           <h2
             data-aos="fade-left "
             data-aos-delay="800"
-            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md laptop:text-[10px]  laptop:font-semibold"
+            className="uppercase leading-[20px] text-[11px] font-bold py-1 px-2  border border-[#E5E5E5] rounded-md max-laptop:text-[10px]  max-laptop:font-semibold"
           >
             education
           </h2>
@@ -128,16 +128,16 @@ function BlofAside({
           </h2>
         </div>
       </div>
-      <div className="paragrahn flex flex-col gap-4 tablet:gap-2">
+      <div className="paragrahn flex flex-col gap-4 max-tablet:gap-2">
         <h1
           data-aos="fade-down"
-          className="font-bold text-[20px] leading-[30px] uppercase  laptop:text-[17px] laptop:leading-[25px] tablet:text-[15px]"
+          className="font-bold text-[20px] leading-[30px] uppercase  max-laptop:text-[17px] max-laptop:leading-[25px] max-tablet:text-[15px]"
         >
           Paragraph
         </h1>
         <p
           data-aos="fade-up"
-          className="text-[15px] leading-[27px] font-normal text-[#9D9D9D] laptop:text-[13px] laptop:leading-[19.5px] tablet:text-[11px] tablet:leading-[15px]"
+          className="text-[15px] leading-[27px] font-normal text-[#9D9D9D] max-laptop:text-[13px] max-laptop:leading-[19.5px] max-tablet:text-[11px] max-tablet:leading-[15px]"
         >
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
           itaque, autem necessitatibus voluptate quod mollitia delectus aut,

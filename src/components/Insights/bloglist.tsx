@@ -64,7 +64,7 @@ function BlogList({
           <Search searchQuery={searchQuery} handlesearch={handlesearch} />
         </div>
       )}
-      <div className="grid grid-cols-2 gap-8  w-fit phoneL:gap-1 phoneP:grid-cols-1 place-items-center   ">
+      <div className="grid grid-cols-2 gap-8  w-fit max-phoneL:gap-1 max-phoneP:grid-cols-1 place-items-center   ">
         {currentitems.map((blog, index) => {
           return (
             <BlogPost
@@ -86,21 +86,21 @@ function BlogList({
           pageRangeDisplayed={1}
           onPageChange={handlePageClick}
           containerClassName="flex justify-center space-x-2 mt-6 
-                      phoneL:space-x-1 phoneL:text-sm 
-                      phoneP:flex-wrap phoneP:gap-2 phoneP:text-xs"
+                      max-phoneL:space-x-1 max-phoneL:text-sm 
+                      max-phoneP:flex-wrap max-phoneP:gap-2 max-phoneP:text-xs"
           pageClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200 
-                 phoneL:px-3 phoneL:py-1 
-                 phoneP:px-2 phoneP:py-1"
+                 max-phoneL:px-3 max-phoneL:py-1 
+                 max-phoneP:px-2 max-phoneP:py-1"
           activeClassName="bg-webpurple text-white border-blue-600"
           previousClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200
-                     phoneL:px-3 phoneL:py-1
-                     phoneP:px-2 phoneP:py-1"
+                     max-phoneL:px-3 max-phoneL:py-1
+                     max-phoneP:px-2 max-phoneP:py-1"
           nextClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer hover:bg-gray-200
-                 phoneL:px-3 phoneL:py-1
-                 phoneP:px-2 phoneP:py-1"
+                 max-phoneL:px-3 max-phoneL:py-1
+                 max-phoneP:px-2 max-phoneP:py-1"
           breakClassName="px-4 py-2 border border-gray-300 rounded-md cursor-pointer
-                  phoneL:px-3 phoneL:py-1 
-                  phoneP:px-2 phoneP:py-1"
+                  max-phoneL:px-3 max-phoneL:py-1 
+                  max-phoneP:px-2 max-phoneP:py-1"
           disabledClassName="opacity-50 cursor-not-allowed"
         />
       </div>

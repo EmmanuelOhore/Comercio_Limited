@@ -5,3 +5,9 @@
   background-size: cover;
   background-position: center;
 }
+@theme {
+  --breakpoint-laptop: 1025px;
+  --breakpoint-tablet: 900px;
+  --breakpoint-phoneL: 500px;
+  --breakpoint-phoneP: 350px;
+}

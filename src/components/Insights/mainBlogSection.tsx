@@ -35,7 +35,7 @@ function MainBlogSection() {
     setsurrentindex(0); // Reset pagination index
   };
   return (
-    <div className="flex py-[8rem] gap-[3rem] w-[80%]  mx-auto laptop:w-[90%] laptop:gap-4 tablet:w-full tablet:px-2 tablet:gap-2 phoneL:flex-col phoneL:py-[5rem] phoneL:gap-[3rem] phoneP:py-[4rem] ">
+    <div className="flex py-[8rem] gap-[3rem] w-[80%]  mx-auto max-laptop:w-[90%] max-laptop:gap-4 max-tablet:w-full max-tablet:px-2 max-tablet:gap-2 max-phoneL:flex-col max-phoneL:py-[5rem] max-phoneL:gap-[3rem] max-phoneP:py-[4rem] ">
       <BlogList
         filteredBlog={filteredBlog}
         setfilteredBlog={setfilteredBlog}
