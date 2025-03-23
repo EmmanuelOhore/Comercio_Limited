@@ -1,4 +1,4 @@
-import placeholder from "../../assets/images.png";
+import placeholder from "../../assets/placeholder.png";
 import CompanyCards from "./companyCards";
 const OurCompany = () => {
   const companydata = [
@@ -26,13 +26,15 @@ const OurCompany = () => {
     },
   ];
   return (
-    <section className="p-3 h-[80vh] flex bg-[#E3E8FE] flex-col gap-5 ">
-      <header className="flex flex-col gap-2 w-[90%] mx-auto">
-        <small className="text-base font-medium text-[#122A74]">
+    <section className="p-4 h-[80vh] flex bg-[#E3E8FE] flex-col gap-5 max-laptop:h-[70vh] max-tablet:h-auto max-phoneL:p-2 ">
+      <header className="flex flex-col gap-2 w-[90%] mx-auto max-tablet:w-full max-tablet:gap-1">
+        <small className="text-base font-medium text-[#122A74] max-tablet:text-sm max-phoneP:text-xs">
           Our Solutions
         </small>
-        <h1 className="text-4xl font-bold">Our Company</h1>
-        <p className="text-base font-normal  w-[80%] mt-8 text-[#9CA7C3]">
+        <h1 className="text-4xl font-bold max-laptop:text-3xl max-tablet:text-2xl max-phoneP:text-xl ">
+          Our Company
+        </h1>
+        <p className="text-base font-normal  w-[80%] mt-8 text-[#9CA7C3] max-laptop:mt-4 max-laptop:text-black/64 max-laptop:w-full max-tablet:mt-2.5 max-tablet:text-sm max-phoneP:text-xs">
           With over two decades of experience and a team of highly skilled
           personnel, we deploy key infrastructure solutions covering various
           spheres of the IT world such as cabling and network essentials,
@@ -46,7 +48,7 @@ const OurCompany = () => {
         </p>
       </header>
       <article className="flex relative justify-center p-2 ">
-        <div className=" flex absolute  justify-between gap-4 w-[95%]  ">
+        <div className=" flex absolute  justify-between gap-4 w-[95%] max-laptop:w-full  max-tablet:static max-tablet:grid max-tablet:grid-cols-2 max-tablet:gap-2 max-phoneP:grid-cols-1">
           {companydata.map((data) => {
             return <CompanyCards {...data} />;
           })}

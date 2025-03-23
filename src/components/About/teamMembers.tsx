@@ -41,13 +41,13 @@ function TeamMemebers() {
   ];
   return (
     <>
-      <div className="slider-container   w-full mx-auto phoneL:w-[90%]">
+      <div className="slider-container  w-full mx-auto max-phoneL:w-[90%]">
         <Swiper
           modules={[Pagination, Scrollbar, A11y, Autoplay]}
           spaceBetween={20}
           slidesPerView={3}
           pagination={{ clickable: true }}
-          autoplay={{ delay: 2500 }}
+          autoplay={{ delay: 2000 }}
           loop
           breakpoints={{
             320: { slidesPerView: 1 },
@@ -65,7 +65,7 @@ function TeamMemebers() {
               key={index}
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
-              className="!h-[550px]   relative laptop:h-[400px] phoneL:h-[500px] group  phoneP:h-[400px]"
+              className="!h-[550px] relative max-laptop:!h-[400px] max-phoneL:!h-[400px] group  max-phoneP:!h-[350px]"
             >
               <span
                 onClick={() => {

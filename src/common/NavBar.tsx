@@ -1,16 +1,19 @@
 import { NavLink, Link, useNavigate } from "react-router-dom";
-// import { useState } from "react";
+import { useState } from "react";
 import logo from "../assets/logo-Placeholder.jpg";
 const NavBar = () => {
   const navigate = useNavigate();
-  // const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const handleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
   const navData = [
     { navName: "About", navLink: "/about" },
     { navName: "Services", navLink: "/service" },
     { navName: "Insights", navLink: "/insights" },
   ];
   return (
-    <nav className=" relative flex items-center justify-between py-6 px-[5rem] bg-black  max-laptop:py-5 max-laptop:px-[3rem]  max-tablet:px-[2rem] max-tablet:py-4">
+    <nav className=" sticky top-0 z-20 backdrop-blur-sm  flex items-center justify-between py-6 px-[5rem] bg-black/60  flex-wrap  max-laptop:py-5 max-laptop:px-[3rem]  max-tablet:px-[2rem] max-tablet:py-4">
       <div className=" w-[5rem] h-[2.5rem] text-center rounded-sm overflow-hidden  max-tablet:w-[4rem] max-tablet:h-[2rem]">
         <Link to="/">
           <img
@@ -49,7 +52,29 @@ const NavBar = () => {
           Contact us
         </button>
       </div>
-      <i className="fa-solid fa-bars !hidden max-phoneL:!block  text-white text-2xl max-phoneP:text-xl "></i>
+      <i
+        onClick={handleNav}
+        className="fa-solid fa-bars !hidden max-phoneL:!block  text-white text-2xl max-phoneP:text-xl "
+      ></i>
+      {isNavOpen && (
+        <ul className="gap-5 font-semibold hidden basis-full max-phoneL:flex max-phoneL:flex-col max-phoneL:items-center max-phoneL:mt-3 ">
+          {navData.map((nav, index) => {
+            return (
+              <NavLink
+                className={({ isActive }) =>
+                  isActive
+                    ? "text-[#1b40c6] transition-all duration-300 text-lg"
+                    : "text-white hover:text-[#0B2585] transition-all duration-300 text-lg max-tablet:text-base max-phoneL:text-sm"
+                }
+                to={nav.navLink}
+                key={index}
+              >
+                {nav.navName}
+              </NavLink>
+            );
+          })}
+        </ul>
+      )}
     </nav>
   );
 };

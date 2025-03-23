@@ -7,7 +7,7 @@ const OptimizingSection = () => {
           <h1 className="text-4xl text-black font-bold  w-[80%] max-laptop:text-3xl max-laptop:w-full max-phoneL:text-xl max-phoneP:text-lg max-phoneP:leading-[1.3rem]">
             Cost-Optimizing Section Management Solution
           </h1>
-          <p className="text-lg font-light max-laptop:text-base max-laptop:font-normal text-black/70 max-phoneL:text-sm max-phoneP:text-xs ">
+          <p className="text-lg font-normal max-laptop:text-base max-laptop:font-normal text-black/70 max-phoneL:text-sm max-phoneP:text-xs ">
             MTN Nigeria was able to continue its business growth with a cost
             -optimizing Section management capability in place. MTN reduced its
             yearly spend on high-end storage by over 37% despite its Section

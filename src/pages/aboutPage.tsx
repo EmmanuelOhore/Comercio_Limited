@@ -1,9 +1,10 @@
+import Carosel from "../common/carosel";
 import Footer from "../common/footer";
 import NavBar from "../common/NavBar";
 import Subhero from "../common/subhero";
 import AboutLogos from "../components/About/AboutLogos";
 import AboutUs from "../components/About/aboutUs";
-import Clientele from "../components/About/cintella";
+// import Clientele from "../components/About/cintella";
 import CyberSecurity from "../components/About/cubersycirty";
 import MissionVision from "../components/About/missionvission";
 import OurCompany from "../components/About/OurCompany";
@@ -22,7 +23,10 @@ const AboutPage = () => {
       <OurCompany />
       <Overlay />
       <CyberSecurity />
-      <Clientele />
+      <Carosel
+        header="Our Clientele"
+        text="Driving technology for leading brands"
+      />
       <Footer />
     </main>
   );

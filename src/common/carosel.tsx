@@ -1,20 +1,25 @@
-import placeholder from "../../assets/placeholder.png";
+import placeholder from "../assets/placeholder.png";
 import { SwiperSlide, Swiper } from "swiper/react";
 import { Scrollbar, A11y, Autoplay } from "swiper/modules";
 import "swiper/swiper-bundle.css";
-const arraydata = Array.from({ length: 6 }, (_, i) => i + 1);
 
-const AboutLogos = () => {
+type AboutLogosProps = {
+  header: string;
+  text: string;
+};
+
+const Carosel = ({ header, text }: AboutLogosProps) => {
+  const arraydata = Array.from({ length: 6 }, (_, i) => i + 1);
+
   return (
-    <section className="flex justify-center  my-[6rem]  py-10 max-laptop:my-[3rem] max-laptop:py-5">
-      <div className=" w-[90%] justify-center flex  items-center flex-col  gap-10 p-4 max-tablet:w-full  ">
-        <header className="gap-3 flex flex-col items-center max-tablet:gap-1">
-          <h2 className="text-4xl font-bold text-black/80 w-[70%] max-laptop:w-[90%]  max max-tablet:text-2xl max-tablet:w-full  max-phoneL:text-xl max-phoneL:text-center max-phoneP:text-base max-phoneP:leading-[1.3rem]  ">
-            Leading and Value-Driven Companies Trust their Businesses with
-            Comercio Limited
+    <section className="flex justify-center  my-[6rem]  py-10 max-laptop:my-[3rem] max-laptop:py-5 max-phoneL:my-[1.5rem]">
+      <div className=" w-[90%] justify-center flex   flex-col  gap-10 p-4 max-tablet:w-full max-tablet:gap-5 max-phoneL:gap-5 max-phoneP:gap-3 ">
+        <header className="gap-3 flex flex-col    max-tablet:gap-0 max-phoneL:gap-1">
+          <h2 className="text-4xl font-bold  text-black/80 w-[70%] max-laptop:w-[90%]   max-tablet:text-2xl max-tablet:w-full  max-phoneL:text-lg max-phoneP:text-base max-phoneP:leading-[1.3rem]   ">
+            {header}
           </h2>
-          <h3 className="text-base  text-black/64 text-center max-phoneL:text-sm">
-            This is just a few of our partners
+          <h3 className="text-base  text-black/64  max-phoneL:text-sm max-phoneP:text-[10px]">
+            {text}
           </h3>
         </header>
 
@@ -55,4 +60,4 @@ const AboutLogos = () => {
   );
 };
 
-export default AboutLogos;
+export default Carosel;

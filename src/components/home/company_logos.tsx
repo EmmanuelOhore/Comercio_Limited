@@ -17,7 +17,7 @@ const CompanyLogosSection = () => {
             spaceBetween={20}
             slidesPerView={5}
             pagination={{ clickable: true }}
-            autoplay={{ delay: 2500 }}
+            autoplay={{ delay: 1500 }}
             loop
             breakpoints={{
               320: { slidesPerView: 5 },
