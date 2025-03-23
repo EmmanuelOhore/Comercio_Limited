@@ -48,7 +48,7 @@ const OurCompany = () => {
         </p>
       </header>
       <article className="flex relative justify-center p-2 ">
-        <div className=" flex absolute  justify-between gap-4 w-[95%] max-laptop:w-full  max-tablet:static max-tablet:grid max-tablet:grid-cols-2 max-tablet:gap-2 max-phoneP:grid-cols-1">
+        <div className=" flex absolute  justify-between gap-4 w-[95%] max-laptop:w-full  max-tablet:static max-tablet:grid max-tablet:grid-cols-2 max-tablet:gap-2 max-phoneL:grid-cols-1">
           {companydata.map((data) => {
             return <CompanyCards {...data} />;
           })}

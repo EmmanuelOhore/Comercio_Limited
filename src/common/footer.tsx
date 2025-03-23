@@ -10,7 +10,7 @@ function Footer() {
     },
     {
       explore: "  Blog",
-      info: "Term & Conditions",
+      info: "Conditions",
       company: "Careers",
       link: "/blog",
     },
@@ -50,7 +50,7 @@ function Footer() {
         <div className="flex w-[70%] justify-between max-laptop:w-[65%] max-phoneL:w-[100%] ">
           {/* explore */}
           <div className="explore  flex flex-col gap-6 max-laptop:gap-3">
-            <h1 className="uppercase text-[20px] text-white leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[13px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-]">
+            <h1 className="uppercase text-[20px] text-white leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[12px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-]">
               Explore
             </h1>
             <ul className="max-laptop:flex max-laptop:flex-col max-laptop:gap-1 ">
@@ -70,7 +70,7 @@ function Footer() {
           </div>
           {/* Info */}
           <div className="info  flex flex-col gap-6 max-laptop:gap-3 ">
-            <h1 className="uppercase text-[20px] text-white  leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[13px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-] max-phoneP:pl-[.7rem]">
+            <h1 className="uppercase text-[20px] text-white  leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[12px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-] max-phoneP:pl-[.7rem]">
               Info
             </h1>
             <ul className="max-laptop:flex max-laptop:flex-col max-laptop:gap-1  ">
@@ -90,7 +90,7 @@ function Footer() {
           </div>
           {/* Company */}
           <div className="compasny  flex flex-col gap-6 max-laptop:gap-3">
-            <h1 className="uppercase text-white  text-[20px] leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[13px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-]">
+            <h1 className="uppercase text-white  text-[20px] leading-[30px] font-bold max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[12px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-]">
               Company
             </h1>
             <ul className="max-laptop:flex max-laptop:flex-col max-laptop:gap-1 ">
@@ -110,7 +110,7 @@ function Footer() {
           </div>
           {/* question */}
           <div className="question  flex flex-col gap-6 max-laptop:gap-3">
-            <h1 className="font-bold text-white uppercase leading-[30px] text-[20px] max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[13px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading[13px-] max-phoneP:pl-4">
+            <h1 className="font-bold text-white uppercase leading-[30px] text-[20px] max-laptop:text-[18px] max-tablet:text-[16px] max-tablet:leading-[20px] max-phoneL:text-[12px] max-phoneL:leading-[15px] max-phoneP:text-[10px] max-phoneP:leading-[13px] max-phoneP:pl-4">
               Have a Question?
             </h1>
             <div className="flex flex-col gap-2 laptop:gap-1">

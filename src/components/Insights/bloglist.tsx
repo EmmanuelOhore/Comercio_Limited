@@ -64,7 +64,7 @@ function BlogList({
           <Search searchQuery={searchQuery} handlesearch={handlesearch} />
         </div>
       )}
-      <div className="grid grid-cols-2 gap-8  w-fit max-phoneL:gap-1 max-phoneP:grid-cols-1 place-items-center   ">
+      <div className="grid grid-cols-2 gap-8  w-fit max-phoneL:gap-1 max-phoneL:p-3  max-phoneL:grid-cols-1 place-items-center   ">
         {currentitems.map((blog, index) => {
           return (
             <BlogPost
@@ -80,7 +80,7 @@ function BlogList({
         <ReactPaginate
           previousLabel={"prev"}
           nextLabel={"next"}
-          breakLabel={", ..."}
+          breakLabel={"..."}
           pageCount={pageCount}
           marginPagesDisplayed={1}
           pageRangeDisplayed={1}

@@ -57,23 +57,37 @@ const NavBar = () => {
         className="fa-solid fa-bars !hidden max-phoneL:!block  text-white text-2xl max-phoneP:text-xl "
       ></i>
       {isNavOpen && (
-        <ul className="gap-5 font-semibold hidden basis-full max-phoneL:flex max-phoneL:flex-col max-phoneL:items-center max-phoneL:mt-3 ">
-          {navData.map((nav, index) => {
-            return (
-              <NavLink
-                className={({ isActive }) =>
-                  isActive
-                    ? "text-[#1b40c6] transition-all duration-300 text-lg"
-                    : "text-white hover:text-[#0B2585] transition-all duration-300 text-lg max-tablet:text-base max-phoneL:text-sm"
-                }
-                to={nav.navLink}
-                key={index}
-              >
-                {nav.navName}
-              </NavLink>
-            );
-          })}
-        </ul>
+        <div className="basis-full flex flex-col items-center gap-4 ">
+          <ul className="gap-5 font-semibold hidden max-phoneL:flex max-phoneL:flex-col max-phoneL:items-center max-phoneL:mt-3 ">
+            {navData.map((nav, index) => {
+              return (
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "text-[#1b40c6] transition-all duration-300 text-lg"
+                      : "text-white hover:text-[#0B2585] transition-all duration-300 text-lg max-tablet:text-base max-phoneL:text-sm"
+                  }
+                  to={nav.navLink}
+                  key={index}
+                >
+                  {nav.navName}
+                </NavLink>
+              );
+            })}
+          </ul>
+          <div className="flex gap-2   ">
+            <button className="text-white outline rounded-md  py-2 px-4 text-base font-bold max-tablet:text-sm">
+              <i className="fa-solid fa-earth-americas mr-1.5"></i>
+              Location
+            </button>
+            <button
+              onClick={() => navigate("/contactus")}
+              className="text-lg font-bold rounded-md bg-[#0B2585] text-white    py-2 px-4 max-tablet:text-sm  "
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
       )}
     </nav>
   );

@@ -9,8 +9,8 @@ function BlogPost({
   des: string;
 }) {
   return (
-    <div className="blog_post hover:scale-105 duration-300 transition-all  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_5px_20px_#0B258580] rounded-md max-laptop:w-[19rem] max-tablet:w-[15rem] max-phoneL:w-[100%] max-phoneP:w-[90%]">
-      <BlogDetails />
+    <div className="blog_post  hover:scale-105 duration-300 transition-all  flex flex-col gap-4  overflow-hidden w-[20rem] relative shadow-[0px_5px_20px_#0B258580] rounded-md max-laptop:w-[19rem] max-tablet:w-[15rem] max-phoneL:w-[100%] max-phoneP:w-[90%]">
+      {/* <BlogDetails /> */}
       <div className="blog_post_img ">
         <img src={img} alt="blog_post_img" className="w-full" />
       </div>
