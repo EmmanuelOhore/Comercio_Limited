@@ -64,8 +64,8 @@ const NavBar = () => {
                 <NavLink
                   className={({ isActive }) =>
                     isActive
-                      ? "text-[#1b40c6] transition-all duration-300 text-lg"
-                      : "text-white hover:text-[#0B2585] transition-all duration-300 text-lg max-tablet:text-base max-phoneL:text-sm"
+                      ? "text-[#1b40c6] transition-all duration-300 text-lg  max-tablet:text-base max-phoneL:text-sm max-phoneP:text-xs"
+                      : "text-white hover:text-[#0B2585] transition-all duration-300 text-lg max-tablet:text-base max-phoneL:text-sm max-phoneP:text-xs"
                   }
                   to={nav.navLink}
                   key={index}
@@ -76,13 +76,13 @@ const NavBar = () => {
             })}
           </ul>
           <div className="flex gap-2   ">
-            <button className="text-white outline rounded-md  py-2 px-4 text-base font-bold max-tablet:text-sm">
-              <i className="fa-solid fa-earth-americas mr-1.5"></i>
+            <button className="text-white outline rounded-md  py-2 px-4 text-base font-bold max-tablet:text-sm max-phoneP:text-xs max-phoneP:py-1.5 max-phoneP:font-medium ">
+              <i className="fa-solid fa-earth-americas mr-1.5 "></i>
               Location
             </button>
             <button
               onClick={() => navigate("/contactus")}
-              className="text-lg font-bold rounded-md bg-[#0B2585] text-white    py-2 px-4 max-tablet:text-sm  "
+              className="text-lg font-bold rounded-md bg-[#0B2585] text-white    py-2 px-4 max-tablet:text-sm max-phoneP:text-xs max-phoneP:py-2 max-phoneP:font-medium "
             >
               Contact us
             </button>
