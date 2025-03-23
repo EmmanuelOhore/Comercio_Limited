@@ -73,7 +73,7 @@ function TeamMemebers() {
                   setPhotoIndex(index);
                   setIsOpen(true);
                 }}
-                className="bg-gradient-to-b from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-top scale-y-0 transition-all  duration-300 group-hover:scale-y-50 "
+                className="bg-gradient-to-b from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-top scale-y-0 transition-all  duration-300 group-active:scale-y-50 group-hover:scale-y-50 "
               ></span>
               <span
                 onClick={() => {
@@ -81,7 +81,7 @@ function TeamMemebers() {
                   setPhotoIndex(index);
                   setIsOpen(true);
                 }}
-                className="bg-gradient-to-t from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-bottom scale-y-0 transition-all  duration-[600ms] group-hover:scale-y-50 "
+                className="bg-gradient-to-t from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-bottom scale-y-0 transition-all  duration-[600ms] group-active:scale-y-50 group-hover:scale-y-50 "
               ></span>
 
               <img
@@ -96,7 +96,7 @@ function TeamMemebers() {
               />
               {/* team member information */}
               {teamData[index] && (
-                <div className="absolute z-30 opacity-0  w-full py-4 left-[50%] cursor-pointer translate-x-[-50%] top-[50%] translate-y-[-50%] flex flex-col gap-8 transition-all duration-[600ms] group-hover:opacity-100">
+                <div className="absolute z-30 opacity-0  w-full py-4 left-[50%] cursor-pointer translate-x-[-50%] top-[50%] translate-y-[-50%] flex flex-col gap-8 transition-all duration-[600ms] group-active:opacity-100  group-hover:opacity-100">
                   <header className="flex flex-col justify-center items-center gap-6">
                     <h2 className="text-white uppercase text-[25px] font-bold text-center">
                       {teamData[index].name}
