@@ -2,6 +2,7 @@ import Carosel from "../common/carosel";
 import Footer from "../common/footer";
 import NavBar from "../common/NavBar";
 import Subhero from "../common/subhero";
+import BacktoTop from "../common/toTop";
 import AboutLogos from "../components/About/AboutLogos";
 import AboutUs from "../components/About/aboutUs";
 // import Clientele from "../components/About/cintella";
@@ -15,6 +16,7 @@ const AboutPage = () => {
   return (
     <main>
       <NavBar />
+      <BacktoTop />
       <Subhero page="About" />
       <AboutUs />
       <MissionVision />

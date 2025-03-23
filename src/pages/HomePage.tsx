@@ -6,10 +6,12 @@ import OptimizingSection from "../components/home/Optimization";
 import ServicesSection from "../components/home/servicesSection";
 import NavBar from "../common/NavBar";
 import Footer from "../common/footer";
+import BacktoTop from "../common/toTop";
 
 const HomePage = () => {
   return (
     <main>
+      <BacktoTop />
       <NavBar />
       <HeroSection />
       <ServicesSection />
