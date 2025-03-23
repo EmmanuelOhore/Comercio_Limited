@@ -4,7 +4,7 @@ function Footer() {
     { explore: " Contact", info: "Blog", company: "Blog", link: "/contact" },
     {
       explore: " Porfolio",
-      info: "Privacy & Policy",
+      info: "Policy",
       company: "Contact",
       link: "/portfolio",
     },
