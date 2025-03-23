@@ -1,4 +1,4 @@
-import BlogDetails from "./blogDetals";
+// import BlogDetails from "./blogDetals";
 function BlogPost({
   title,
   img,
