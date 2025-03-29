@@ -1,3 +1,6 @@
+import team1 from "../../assets/Dr-Segun-Aina.jpg";
+import team2 from "../../assets/Sola-A.jpg";
+import team3 from "../../assets/rONKE.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperClass } from "swiper";
 import Lightbox from "yet-another-react-lightbox";
@@ -8,15 +11,11 @@ import { Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 // Import Swiper styles
 import "swiper/swiper-bundle.css";
 
-import teamMemeber1 from "../../assets/placeholder.png";
-import teamMemeber2 from "../../assets/placeholder.png";
-import teamMemeber3 from "../../assets/placeholder.png";
-
 function TeamMemebers() {
   const [isOpen, setIsOpen] = useState(false);
   const [photoIndex, setPhotoIndex] = useState(0);
   const swiperRef = useRef<SwiperClass | null>(null);
-  const images = [teamMemeber1, teamMemeber2, teamMemeber3];
+  const images = [team1, team2, team3];
 
   const handleMouseEnter = () => {
     if (swiperRef.current) swiperRef.current.autoplay.stop();
@@ -27,14 +26,17 @@ function TeamMemebers() {
   };
   const teamData = [
     {
+      img: team1,
       name: "DR. SEGUN AINA, (OFR)",
       role: "Chairman",
     },
     {
+      img: team2,
       name: "SOLA ADEYEGBE",
       role: "Executive Director",
     },
     {
+      img: team3,
       name: "ADERONKE ADEYEGBE",
       role: "Managing Director",
     },
@@ -73,7 +75,7 @@ function TeamMemebers() {
                   setPhotoIndex(index);
                   setIsOpen(true);
                 }}
-                className="bg-gradient-to-b from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-top scale-y-0 transition-all  duration-300 group-active:scale-y-50 group-hover:scale-y-50 "
+                className="bg-gradient-to-b from-white  to-main-blue absolute inset-0 opacity-65 origin-top scale-y-0 transition-all  duration-300 group-active:scale-y-50 group-hover:scale-y-50 "
               ></span>
               <span
                 onClick={() => {
@@ -81,7 +83,7 @@ function TeamMemebers() {
                   setPhotoIndex(index);
                   setIsOpen(true);
                 }}
-                className="bg-gradient-to-t from-white  to-[#0B2585] absolute inset-0 opacity-65 origin-bottom scale-y-0 transition-all  duration-[600ms] group-active:scale-y-50 group-hover:scale-y-50 "
+                className="bg-gradient-to-t from-white  to-main-blue absolute inset-0 opacity-65 origin-bottom scale-y-0 transition-all  duration-[600ms] group-active:scale-y-50 group-hover:scale-y-50 "
               ></span>
 
               <img
@@ -97,7 +99,7 @@ function TeamMemebers() {
               {/* team member information */}
               {teamData[index] && (
                 <div className="absolute z-30 opacity-0  w-full py-4 left-[50%] cursor-pointer translate-x-[-50%] top-[50%] translate-y-[-50%] flex flex-col gap-8 transition-all duration-[600ms] group-active:opacity-100  group-hover:opacity-100">
-                  <header className="flex flex-col justify-center items-center gap-6">
+                  <header className="flex flex-col justify-center items-center gap-4">
                     <h2 className="text-white uppercase text-[25px] font-bold text-center">
                       {teamData[index].name}
                     </h2>

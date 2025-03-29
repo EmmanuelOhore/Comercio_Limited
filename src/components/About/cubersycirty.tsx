@@ -1,5 +1,7 @@
 import placeholder from "../../assets/placeholder.png";
+import { useNavigate } from "react-router-dom";
 const CyberSecurity = () => {
+  const navigate = useNavigate();
   return (
     <section className="mt-20 h-[60vh] max-tablet:h-auto">
       <div className="bg-[#f3f5f7] flex h-full max-tablet:flex-col-reverse max-tablet:p-6 max-phoneL:p-2">
@@ -17,14 +19,15 @@ const CyberSecurity = () => {
               maintain an overall view of availing to our clients cost solutions
               which help reduces downtime.
             </p>
-            <a target="_blank">
+            <div>
               <button
+                onClick={() => navigate("/contactus")}
                 data-aos="fade-right"
-                className="bg-[#0B2585] text-white font-semibold py-3 px-6 rounded-md hover:bg-[#1f0f23] transition duration-300 max-phoneL:text-sm max-phoneP:text-[10px] max-phoneP:px-3 max-phoneP:py-2"
+                className="bg-main-blue text-white font-semibold py-3 px-6 rounded-md hover:bg-[#0B2585] transition duration-300 max-phoneL:text-sm max-phoneP:text-[10px] max-phoneP:px-3 max-phoneP:py-2"
               >
-                Volunteer Now
+                Contact Us
               </button>
-            </a>
+            </div>
           </div>
         </div>
 

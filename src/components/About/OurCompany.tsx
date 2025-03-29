@@ -1,26 +1,29 @@
-import placeholder from "../../assets/placeholder.png";
+import sever from "../../assets/sever-3100049__340.jpg";
+import circut from "../../assets/circuit-3682709_1920.jpg";
+import data from "../../assets/data-we.jpg";
+import swtich from "../../assets/network-197300_1920.jpg";
 import CompanyCards from "./companyCards";
 const OurCompany = () => {
   const companydata = [
     {
-      img: placeholder,
+      img: sever,
       title: "Server Room/ Datacentre Infrastructre",
       description:
         "One of our projects – we setup the Server room for a client",
     },
     {
-      img: placeholder,
+      img: circut,
       title: "Hardware Repairs and Maintenance",
       description:
         "A short description of the service and how the visitor will benefit from it.",
     },
     {
-      img: placeholder,
+      img: data,
       title: "Rack Centre for client",
       description: "Our delivered project of a serverv rack for a client",
     },
     {
-      img: placeholder,
+      img: swtich,
       title: "Switch Configuration",
       description: "Switch configuration for one of our clients in Lagos",
     },

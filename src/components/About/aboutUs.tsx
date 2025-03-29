@@ -22,7 +22,7 @@ const AboutUs = () => {
               Information Technology Training and Web Media Management.
             </p>
 
-            <button className="self-start mt-auto rounded-md bg-[#0B2585] px-6 py-3 text-sm text-white transition hover:opacity-90 max-phoneP:text-xs max-phoneP:font-semibold">
+            <button className="self-start mt-auto rounded-md bg-main-blue px-6 py-3 text-sm text-white transition hover:opacity-90 max-phoneP:text-xs max-phoneP:font-semibold">
               Learn More
             </button>
           </div>

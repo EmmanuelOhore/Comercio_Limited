@@ -1,4 +1,4 @@
-import placeholder from "../../assets/placeholder.png";
+import img from "../../assets/extraordinry.jpg";
 const ExtraOrdinary = () => {
   return (
     <section
@@ -17,15 +17,15 @@ const ExtraOrdinary = () => {
               E-commerce, Agricultural, E-book and Biography websites.
             </p>
 
-            <button className="self-start mt-auto rounded-md bg-[#0B2585] px-6 py-3 text-sm text-white transition hover:opacity-90  max-laptop:font-medium max-phoneL:text-xs max-phoneL:px-4 max-phoneL:mt-3 max-phoneP:text-[10px]">
+            <button className="self-start mt-auto rounded-md bg-main-blue px-6 py-3 text-sm text-white transition hover:opacity-90  max-laptop:font-medium max-phoneL:text-xs max-phoneL:px-4 max-phoneL:mt-3 max-phoneP:text-[10px]">
               Learn More
             </button>
           </div>
 
           {/* Image Section */}
-          <div className="flex w-[40%] h-[60%] max-laptop:w-[50%] max-tablet:w-full bg-cover bg-center p-2">
+          <div className="flex w-[40%]  max-laptop:w-[50%] max-tablet:w-full bg-cover bg-center p-2">
             <img
-              src={placeholder}
+              src={img}
               alt="Placeholder Image"
               className="w-full h-full object-cover"
             />
