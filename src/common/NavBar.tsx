@@ -13,7 +13,7 @@ const NavBar = () => {
     { navName: "Insights", navLink: "/insights" },
   ];
   return (
-    <nav className=" sticky top-0 z-20 backdrop-blur-sm  flex items-center justify-between py-6 px-[5rem] bg-black/60  flex-wrap  max-laptop:py-5 max-laptop:px-[3rem]  max-tablet:px-[2rem] max-tablet:py-4">
+    <nav className=" sticky top-0  backdrop-blur-sm z-40  flex items-center justify-between py-6 px-[5rem] bg-black/60  flex-wrap  max-laptop:py-5 max-laptop:px-[3rem]  max-tablet:px-[2rem] max-tablet:py-4">
       <div className=" w-[5rem] h-[2.5rem] text-center rounded-sm overflow-hidden  max-tablet:w-[4rem] max-tablet:h-[2rem]">
         <Link to="/">
           <img

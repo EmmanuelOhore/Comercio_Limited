@@ -1,4 +1,7 @@
 @import "tailwindcss";
+* {
+  font-family: "Lato", sans-serif;
+}
 .backgroundimgs {
   background: url("./assets/placeholder.png");
   background-repeat: no-repeat;
@@ -10,4 +13,20 @@
   --breakpoint-tablet: 900px;
   --breakpoint-phoneL: 500px;
   --breakpoint-phoneP: 350px;
+  --color-text-color: #0e3e88;
+  --color-large-text: #0b2585;
+}
+
+/* hero section  the home page pagiantion styling */
+.swiper-pagination {
+  bottom: 3rem !important;
+}
+.swiper-pagination-bullet {
+  width: 14px !important;
+  height: 14px !important;
+}
+.swiper-pagination-bullet-active {
+  background-color: #0b2585 !important;
+  width: 14px !important;
+  height: 14px !important;
 }
